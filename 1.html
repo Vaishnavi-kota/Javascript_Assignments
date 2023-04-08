@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+<!--This is also one method by using which we can reload our web page for every 5 secs-->
+   <!--meta http-equiv="refresh" content="5" /-->
+           </head>
+<body>
+ <script type="text/javascript">
+  //Alert,Confirm,Prompt  
+  function f1(){
+    let userName=prompt("Enter your name");
+ let=alert('Welcome  ' +  userName); 
+ confirm('Allow notifications ' + userName );
+  } 
+  //by using setTimeout
+  function f2(){
+    setTimeout(function Timer(){
+f1()
+    },3000);
+  }
+//Page will be reloaded after every 5 secs.This one way 
+//of reloading page by using functions method
+  function f3(){
+    setTimeout(function (){
+   window.location.reload(1);
+}, 5000);
+  }
+    f2();
+ // f1(); 
+f3();
+ </script>
+</body>
+</html>
